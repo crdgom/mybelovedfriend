@@ -14,6 +14,212 @@ body{
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.content-left{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    padding:2%;
+}
+
+.content-left h1{
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content-left p{
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content-right{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://mybelovedfriend.dog/img/underconstruction/mybelovedfriend.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer{
+    width: 100%;
+    height: 30px;
+    background:lemonchiffon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 30px;
+    border-top: 1px solid #333;
+}
+
+.footer p{
+    font-size: 0.9rem;
+    color: #333;
+    text-align: center;
+}
+
+.red{
+    color: tomato;
+}
+
+.golden{
+    color: gold;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .content-left{
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: space-evenly;
+        justify-content: center;
+        align-items: center;
+        padding:2%;
+    }
+
+    .content-left h1{
+        font-size: 2.5rem;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    
+    .content-left p{
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .content-right{
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        justify-content: center;
+        align-items: center;
+        background-image: url("https://mybelovedfriend.dog//img/underconstruction/mybelovedfriend.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+    
+    .footer{
+        width: 100%;
+        height: 30px;
+        background:lemonchiffon;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        bottom: 30px;
+        border-top: 1px solid #333;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.content-left{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    padding:2%;
+}
+
+.content-left h1{
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content-left p{
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content-right{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://mybelovedfriend.dog//img/underconstruction/mybelovedfriend.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer{
+    width: 100%;
+    height: 30px;
+    background:lemonchiffon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 30px;
+    border-top: 1px solid #333;
+} }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
@@ -32,6 +238,7 @@ body{
     font-size: 4rem;
     color: #333;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .content-left p{
@@ -47,12 +254,10 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.content-right img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    background-image: url("https://mybelovedfriend.dog//img/underconstruction/mybelovedfriend.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .footer{
@@ -75,3 +280,149 @@ body{
 .golden{
     color: gold;
 }
+}
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.content-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-left h1{
+    font-size: 4rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content-left p{
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("https://mybelovedfriend.dog//img/underconstruction/mybelovedfriend.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer{
+    width: 100%;
+    height: 60px;
+    background:lemonchiffon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 40px;
+    border-top: 1px solid #333;
+}
+
+.footer p{
+    font-size: 2rem;
+    color: #333;
+}
+
+.red{
+    color: tomato;
+}
+
+.golden{
+    color: gold;
+}
+}
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+    .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.content-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-left h1{
+    font-size: 6rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content-left p{
+    font-size: 4rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("https://mybelovedfriend.dog//img/underconstruction/mybelovedfriend.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer{
+    width: 100%;
+    height: 50px;
+    background:lemonchiffon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 50px;
+    border-top: 1px solid #333;
+}
+
+.footer p{
+    font-size: 2rem;
+}
+
+.red{
+    color: tomato;
+}
+
+.golden{
+    color: gold;
+}
+}   
